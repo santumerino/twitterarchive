@@ -5,7 +5,9 @@ html {
 	height: 100%;
 }
 body {
-	max-width: 60em;
+	background: #14182e;
+	color: white;
+	max-width: 80em;
 	min-height: 100%;
 	font-family: system-ui, sans-serif;
 	margin: 0 auto;
@@ -14,14 +16,14 @@ body {
 footer {
 	font-size: 0.875em; /* 14px /16 */
 	margin-top: 1em;
-	border-top: 1px solid #eee;
+	border-top: 1px solid #404973;
 	padding: 1em 0 0;
 	font-style: italic;
 }
 :link,
 :visited {
-	color: #1C4A1D;
-	text-decoration-color: #17bf63;
+	color: #f7c511;
+	text-decoration-color: #404973;
 }
 .sr-only {
 	position: absolute !important;
@@ -102,11 +104,11 @@ button {
 	}
 }
 .tweets-primary-count {
-	font-size: 4em;
+	font-size: 3em;
 	margin: 2em 0 1em;
 	padding: 0 0 2em;
 	text-align: center;
-	border-bottom: 2px solid #eee;
+	border-bottom: 2px solid #404973;
 	font-weight: 400;
 }
 .tweets-primary-count-num {
@@ -135,7 +137,7 @@ button {
 .tweets-linear-list .tweet {
 	margin-bottom: 3.5rem;
 	padding-bottom: 3.5rem;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px dashed #404973;
 }
 
 /* Individual tweet */
@@ -168,7 +170,7 @@ button {
 }
 .tweet-pretext,
 .tweet-pretext:visited {
-	color: #555;
+	color: #686f99;
 }
 .tweet-metadata {
 	display: block;
@@ -321,38 +323,38 @@ img.tweet-media-og {
 	overflow: hidden;
 }
 .tag-naked {
-	background-color: #fff;
-	color: #757575;
+	background-color: #404973;
+	color: white;
 }
 .tweet-metadata .tag-naked:link,
 .tweet-metadata .tag-naked:visited {
-	color: #757575;
+	color: #f7c511;
 }
 .tag:first-child,
 .tag + .tag {
 	margin-left: 0;
 }
 .tag-favorite {
-	background-color: #e0245e;
+	background-color: #4f1d4c;
 	border-color: #e0245e;
 }
 .tag-retweet {
-	background-color: #397d58;
+	background-color: #283540;
 	border-color: #397d58;
 }
 .tag-lite.tag-favorite,
 .tag-lite.tag-retweet {
-	background-color: #fff;
 	border-color: transparent;
 	font-weight: inherit;
 }
 .tag-lite.tag-favorite {
-	color: #e0245e;
+	color: #e64539;
 }
 .tag-lite.tag-retweet {
-	color: #096f37;
+	color: #63ab3f;
 }
 .tag-avatar {
+	background: #14182e;
 	padding: 0;
 }
 
