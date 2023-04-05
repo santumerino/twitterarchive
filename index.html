@@ -29,11 +29,11 @@
 
 		<is-land on:visible="" on:save-data="false">
 			<template data-island="">
-				<h2>Search Tweets (currently broken! will fix very soon):</h2>
+				<h2>Search Tweets:</h2>
 				<div class="tweets-search">
 					<div id="search" class="tweets-search"></div>
 					<link href="/twitterarchive/pagefind/pagefind-ui.css" rel="stylesheet">
-					<script src="/twitterarchive/pagefind/pagefind-ui.js" onload="new PagefindUI({ element: '#search', processResult: function (result) { result.url = `/twitterarchive${result.url}`; return result; }, showImages: false });"></script>
+					<script src="/twitterarchive/pagefind/pagefind-ui.js" onload="new PagefindUI({ element: '#search', showImages: false, processResult: function (result) { let prefix = 'twitterarchive';if (result.url.indexOf(prefix) < 0) { result.url = `/${prefix}${result.url}`; } console.log(result); return result; } });"></script>
 				</div>
 			</template>
 		</is-land>
